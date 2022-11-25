@@ -14,7 +14,7 @@
         if('serviceWorker' in navigator){ 
             //serviceworker가 있을때(서비스워커 지원 여부)
             navigator.serviceWorker
-            .register("sw.js")//등록
+            .register("service-worker.js")//등록
             .then(function(success){
                 console.log("successing_install_for_serviceworker", success)
             })
