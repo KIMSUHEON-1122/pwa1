@@ -1,0 +1,20 @@
+{
+    "background_color": "#ffffff",
+    "description": "",
+    "dir": "ltr",
+    "display": "standalone",
+    "orientation": "any",
+    "scope": "/",
+    "start_url": "/",
+    "theme_color": "#ffffff",
+    "categories": [],
+    "screenshots": [],
+    "icons": [
+      {
+        "src": "img/logo.png",
+        "type": "image/png",
+        "sizes": "152x152"
+      }
+    ],
+    "shortcuts": []
+  }

@@ -1,0 +1,82 @@
+.login_container{
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color;
+}
+
+.login{
+    display: flex;
+    height: 100%;
+    min-height: 460px;
+    justify-content: center;
+    flex-direction: column;
+    .login_logo{
+        text-align: center;
+        line-height: 100px;
+        color: rgb(34, 34, 0);
+        font-size: 20px;
+        height: 100px;
+        background: {
+            image : url("../img/olivelogo.png"); /* 컴파일 된 이후의 경로 */
+            repeat : no-repeat;
+            position: center;
+            size : auto 100%
+        }
+        margin-bottom: 20px;
+    }
+    .login_account{
+        text-align: center;
+        color: $gray2;
+        font-size: 0.8em;
+        a{
+            color: $gray1;
+        }
+    }
+}
+
+.login_form{
+    width: 240px;
+    margin: 0 auto 80px;
+    font-size: 0.8em;
+    input{
+        width: 240px;
+        height: 40px;
+        border: 1px solid $opacityBlack;
+
+        &:focus{
+            outline: none;
+        }
+        &::placeholder{
+            color: $gray2;
+        }
+    }
+        .login-form_id{
+            border-radius: 3px 3px 0 0;
+            border-bottom: none;
+            padding-left: 10px;
+        }
+        .login-form_pw{
+            border-radius: 0px 0px 3px 3px;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            padding-left: 10px;
+            margin-bottom: 7px;
+        }
+        .login-form_btn{
+            background-color: $main-color;
+            color: #fff;
+
+            &:hover{
+                background-color: rgb(54, 54, 39);
+                transition: all 0.2s ease-in-out;
+            }
+        }
+        .login-form_check{
+            width: 20px;
+            vertical-align: middle;
+            //appearance: unset; 기본 설정이 되어 있는 모양을 다 없애줌.
+        }
+        label{
+            color: $gray1;
+        }   
+}
+

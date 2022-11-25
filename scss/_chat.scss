@@ -1,0 +1,89 @@
+.chat{
+    @include set-box (100%)
+}
+.chat_screen{
+    background-color : $bg-color;
+    overflow: auto;
+    height: calc(100% - 125px);
+    .chat_screen_bar{
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        .chat_nick{
+            font-size: 1em;
+        }
+    }
+    
+}
+
+
+.chat_user{
+    background-color : $bg-color;
+    &:hover{
+        background-color: inherit;
+    }
+}
+
+.bubble_container{
+    padding-top : 20px;
+    &>div{
+        &:hover{
+            background-color: inherit;
+        }
+    }
+}
+.bubble_wrap{
+    .bubble_content{
+        display: inline-block;
+        // width : 80%;
+        position: relative;
+        max-width: 700px;
+        .preview_nick{
+            display :inline;
+        }
+        .bubble{
+            // display: inline-block;
+        }
+    }
+    .bubble_time{
+        font-size: 0.55em;
+        position: absolute;
+        bottom: 0;
+        right: -45px;
+    }
+}
+.bubble_time{
+
+}
+.chat_form{
+    background-color: white;
+    height: 125px;
+    padding: 10px;
+
+    .chat_form_msg{
+        @include set-box(90px,100%);
+        resize: none;
+        border: none;
+        outline: none;
+        margin-bottom: 5px;
+    }
+    .chat_form_util{
+        display: flex;
+        justify-content: space-between;
+        .chat_form_util_plugin{
+            i{
+                margin-right: 10px;
+                color : $gray1;
+                line-height: 35px
+            }
+        }
+        .chat_form_util_submit{
+            .chat_form_btn{
+                @include set-box(35px, 70px, 6px);
+                border: none;
+                background-color: $opacityBlack;
+            }
+        }
+        
+    }
+}

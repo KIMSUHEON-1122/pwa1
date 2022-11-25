@@ -1,0 +1,173 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "KOTRA_BOLD-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.1/KOTRA_BOLD-Bold.woff") format("woff");
+  font-weight: narmal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "KOTRA_BOLD-Bold";
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  min-width: 350px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+nav {
+  height: 100%;
+  width: 70px;
+  border-radius: 8px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding-top: 50px;
+}
+nav .nav_list .nav_btn {
+  padding: 14px 0;
+  text-align: center;
+  color: rgb(197, 197, 194);
+}
+nav .nav_list .nav_btn.active {
+  color: black;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+header .header_title {
+  font-size: 1.5em;
+}
+header .header_menu span {
+  height: 36px;
+  width: 36px;
+  border-radius: 18px;
+  display: inline-block;
+  text-align: center;
+  line-height: 36px;
+  cursor: pointer;
+}
+header .header_menu span:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.login_container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(128, 128, 0, 0.3);
+}
+
+.login {
+  display: flex;
+  height: 100%;
+  min-height: 460px;
+  justify-content: center;
+  flex-direction: column;
+}
+.login .login_logo {
+  text-align: center;
+  line-height: 100px;
+  color: rgb(34, 34, 0);
+  font-size: 20px;
+  height: 100px;
+  background-image: url("../img/olivelogo.png"); /* 컴파일 된 이후의 경로 */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  margin-bottom: 20px;
+}
+.login .login_account {
+  text-align: center;
+  color: rgb(197, 197, 194);
+  font-size: 0.8em;
+}
+.login .login_account a {
+  color: rgb(87, 87, 78);
+}
+
+.login_form {
+  width: 240px;
+  margin: 0 auto 80px;
+  font-size: 0.8em;
+}
+.login_form input {
+  width: 240px;
+  height: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.login_form input:focus {
+  outline: none;
+}
+.login_form input::-moz-placeholder {
+  color: rgb(197, 197, 194);
+}
+.login_form input:-ms-input-placeholder {
+  color: rgb(197, 197, 194);
+}
+.login_form input::placeholder {
+  color: rgb(197, 197, 194);
+}
+.login_form .login-form_id {
+  border-radius: 3px 3px 0 0;
+  border-bottom: none;
+  padding-left: 10px;
+}
+.login_form .login-form_pw {
+  border-radius: 0px 0px 3px 3px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding-left: 10px;
+  margin-bottom: 7px;
+}
+.login_form .login-form_btn {
+  background-color: rgb(82, 82, 47);
+  color: #fff;
+}
+.login_form .login-form_btn:hover {
+  background-color: rgb(54, 54, 39);
+  transition: all 0.2s ease-in-out;
+}
+.login_form .login-form_check {
+  width: 20px;
+  vertical-align: middle;
+}
+.login_form label {
+  color: rgb(87, 87, 78);
+}
+
+.chats {
+  margin-left: 70px;
+}
+
+.previews {
+  border: 1px solid red;
+}
+
+.preview a {
+  color: black;
+}
+.preview a .preview_column .preview_pic {
+  border: 1px solid green;
+}
+.preview:hover {
+  background-color: rgb(240, 240, 240);
+}/*# sourceMappingURL=main.css.map */

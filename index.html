@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- apple에서 데이터 왔다갔다할때 문제 생기는거 막아줌.. 모든 컨텐츠를 끌고감? -->
+    <title>O!LIVE - 로그인</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script>
+        if('serviceWorker' in navigator){ 
+            //serviceworker가 있을때(서비스워커 지원 여부)
+            navigator.serviceWorker
+            .register("sw.js")//등록
+            .then(function(success){
+                console.log("successing_install_for_serviceworker", success)
+            })
+            .catch(function(error){
+                console.log("fail_install_for_serviceworker", error)
+            })
+
+        }
+    </script>
+</head>
+<body>
+    <div class="login_container">
+        <div class="login">
+            <h1 class="login_logo">
+                O!LIVE
+            </h1>
+            <form action="./chatlist.html" class="login_form">
+                <input type="text" class="login-form_id" placeholder="올리브계정(이메일 또는 전화번호)">
+                <input type="password" class="login-form_pw" placeholder="비밀번호">
+                <input type="submit" class="login-form_btn" value="로그인">
+                <input type="checkbox" class="login-form_check" id="check">
+                <label for="check">자동로그인</label>
+            </form>
+            <p class="login_account">
+                <a href="#">올리브 계정 찾기</a>&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
+                <a href="#">비밀번호 재설정</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+$bg-color : rgba(128, 128, 0, 0.3);
+$main-color : rgb(82, 82, 47);
+$gray1 : rgb(87, 87, 78);
+$gray2 : rgb(197, 197, 194);
+$gray3 : rgb(240, 240, 240);
+$opacityBlack : rgba(0,0,0,0.2);
+
+@mixin set-box($height, $width : 100%, $border-radius : 0){
+    height: $height;
+    width: $width;
+    border-radius: $border-radius;
+}
