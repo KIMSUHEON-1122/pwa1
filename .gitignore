@@ -4,6 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
+ngrok.exe
+트위터.json
 
 # testing
 /coverage
